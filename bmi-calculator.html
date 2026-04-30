@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator – Calculate Your Body Mass Index | Infinite Calculators</title>
+  <meta name="description" content="Use our free BMI Calculator to instantly calculate your Body Mass Index. Enter your weight and height to find out if you're underweight, normal, overweight, or obese." />
+  <meta name="keywords" content="bmi calculator, body mass index calculator, bmi calculator online, bmi checker, healthy weight calculator" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://infinitecalculators.com/bmi-calculator.html" />
+  <meta property="og:title" content="BMI Calculator – Free Online Body Mass Index Tool" />
+  <meta property="og:description" content="Calculate your BMI instantly. Find out your body mass index and health category with our free, accurate BMI calculator." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <nav class="nav-container">
+    <a href="/" class="nav-logo"><div class="logo-icon">∞</div> Infinite Calculators</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/bmi-calculator.html" class="active">BMI</a></li>
+      <li><a href="/age-calculator.html">Age</a></li>
+      <li><a href="/emi-calculator.html">EMI</a></li>
+      <li><a href="/percentage-calculator.html">Percentage</a></li>
+      <li><a href="/profit-margin-calculator.html">Profit</a></li>
+      <li><a href="/discount-calculator.html">Discount</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="calc-page-hero">
+  <div class="breadcrumb"><a href="/">Home</a> <span>/</span> <span>BMI Calculator</span></div>
+  <h1>BMI Calculator</h1>
+  <p>Calculate your Body Mass Index instantly. Understand your weight category and take steps toward a healthier life.</p>
+</section>
+
+<section class="calc-widget-section">
+  <div class="calc-widget">
+    <div class="calc-widget-title">⚖️ BMI Calculator</div>
+    <form id="bmiForm" novalidate>
+      <div class="form-group">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" placeholder="e.g. 70" min="1" max="500" step="0.1" required />
+        <div class="input-hint">Enter your weight in kilograms</div>
+      </div>
+      <div class="form-group">
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" placeholder="e.g. 175" min="50" max="300" step="0.1" required />
+        <div class="input-hint">Enter your height in centimeters</div>
+      </div>
+      <button type="submit" class="calc-btn">Calculate BMI</button>
+      <button type="reset" class="btn btn-secondary" style="width:100%;margin-top:10px;justify-content:center;">Clear</button>
+    </form>
+    <div class="result-box" id="bmiResult">
+      <div class="result-label">Your BMI</div>
+      <div class="result-value" id="bmiValue">–</div>
+      <span class="result-category" id="bmiCategory"></span>
+      <div class="bmi-meter-wrap">
+        <div class="bmi-meter">
+          <div class="bmi-pointer" id="bmiPointer" style="left:0%"></div>
+        </div>
+        <div class="bmi-labels">
+          <span>Underweight<br>&lt;18.5</span>
+          <span>Normal<br>18.5–24.9</span>
+          <span>Overweight<br>25–29.9</span>
+          <span>Obese<br>≥30</span>
+        </div>
+      </div>
+      <div class="result-desc" id="bmiDesc"></div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt">
+  <div class="prose">
+    <h2>What is BMI?</h2>
+    <p>Body Mass Index (BMI) is a simple numerical measure of a person's body fat based on their weight and height. It is widely used by doctors, dietitians, and health professionals as a quick screening tool to identify potential weight problems in adults. While BMI does not directly measure body fat, it correlates well with direct measures of body fat and can indicate health risks.</p>
+    <p>Developed by Belgian mathematician Adolphe Quetelet in the 19th century, BMI has become the most widely accepted international standard for assessing healthy body weight relative to height. Organizations like the World Health Organization (WHO) and the Centers for Disease Control (CDC) use BMI classifications to monitor population health.</p>
+
+    <h2>How is BMI Calculated?</h2>
+    <p>The BMI formula is straightforward:</p>
+    <div class="formula-box">
+      BMI = Weight (kg) ÷ [Height (m)]²
+      <br><br>
+      Or equivalently: BMI = Weight (kg) ÷ [(Height in cm ÷ 100)²]
+    </div>
+    <p>For example, if you weigh 70 kg and are 175 cm (1.75 m) tall: BMI = 70 ÷ (1.75)² = 70 ÷ 3.0625 = <strong>22.86</strong> — which falls in the Normal range.</p>
+
+    <h2>BMI Categories (WHO Standard)</h2>
+    <ul>
+      <li><strong>Below 18.5</strong> — Underweight: May indicate malnutrition or an eating disorder.</li>
+      <li><strong>18.5 – 24.9</strong> — Normal Weight: Healthy range associated with lower health risks.</li>
+      <li><strong>25.0 – 29.9</strong> — Overweight: Slightly elevated risk for conditions like heart disease and diabetes.</li>
+      <li><strong>30.0 – 34.9</strong> — Obese (Class I): Significant increased risk for metabolic diseases.</li>
+      <li><strong>35.0 – 39.9</strong> — Obese (Class II): High health risk category.</li>
+      <li><strong>40.0 and above</strong> — Obese (Class III / Morbid Obesity): Very high risk; medical intervention recommended.</li>
+    </ul>
+
+    <h2>Limitations of BMI</h2>
+    <p>While BMI is a useful population-level screening tool, it has some limitations for individuals:</p>
+    <ul>
+      <li>It does not distinguish between muscle mass and fat mass — athletes may have high BMI despite low body fat.</li>
+      <li>It may underestimate fat in older adults who have lost muscle mass.</li>
+      <li>BMI may differ in accuracy across different ethnicities.</li>
+      <li>It does not account for fat distribution (e.g., visceral vs. subcutaneous fat).</li>
+    </ul>
+    <p>Always consult a healthcare professional for a comprehensive health assessment. BMI is one of many tools, not a definitive diagnosis.</p>
+
+    <h2>How to Achieve a Healthy BMI</h2>
+    <p>If your BMI is outside the normal range, lifestyle changes can help:</p>
+    <ul>
+      <li><strong>Balanced diet:</strong> Focus on whole foods, lean proteins, vegetables, and whole grains.</li>
+      <li><strong>Regular exercise:</strong> Aim for at least 150 minutes of moderate activity per week.</li>
+      <li><strong>Adequate sleep:</strong> Poor sleep is linked to weight gain and hormonal imbalances.</li>
+      <li><strong>Stress management:</strong> Chronic stress can contribute to emotional eating and weight gain.</li>
+      <li><strong>Professional guidance:</strong> Work with a doctor or dietitian for a personalized plan.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container-sm">
+    <div class="section-header"><h2>Frequently Asked Questions</h2></div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">What is a healthy BMI for adults? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>For adults (20 years and older), a BMI between 18.5 and 24.9 is considered healthy or "normal" by the World Health Organization. However, what's healthy can vary slightly based on age, sex, and ethnicity. A BMI of 25–29.9 is considered overweight, and 30 or above is classified as obese.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is BMI accurate for everyone? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>BMI is a useful screening tool but has limitations. It may overestimate body fat in athletes and bodybuilders (who have more muscle mass) and underestimate it in elderly people (who may have lost muscle). For a more complete picture of health, consider waist circumference, body fat percentage, and other metrics.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can children use this BMI calculator? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>No — this calculator uses the adult BMI formula. For children and teenagers (ages 2–19), BMI is calculated the same way but interpreted using age- and sex-specific percentile charts from the CDC or WHO. A pediatrician should evaluate BMI in children.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How often should I check my BMI? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>There's no strict rule, but most health professionals suggest checking your BMI every 3–6 months if you're actively working on weight management. For maintenance, an annual check during a routine health screening is usually sufficient.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What should I do if my BMI is in the obese range? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>If your BMI is 30 or above, it's advisable to consult a healthcare professional. They can assess additional risk factors (blood pressure, cholesterol, blood sugar) and recommend a safe, personalized plan involving dietary changes, physical activity, and possibly medical support.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt">
+  <div class="container">
+    <div class="prose">
+    <h2 style="color: var(--text-primary); margin-bottom: 8px;">Related Calculators</h2>
+    <p>Explore other free tools available on Infinite Calculators.</p>
+    </div>
+    <div class="related-grid">
+      <a href="/age-calculator.html" class="related-card"><span class="rc-icon">🎂</span> Age Calculator</a>
+      <a href="/emi-calculator.html" class="related-card"><span class="rc-icon">🏦</span> EMI Calculator</a>
+      <a href="/percentage-calculator.html" class="related-card"><span class="rc-icon">📊</span> Percentage Calculator</a>
+      <a href="/profit-margin-calculator.html" class="related-card"><span class="rc-icon">📈</span> Profit Margin</a>
+      <a href="/discount-calculator.html" class="related-card"><span class="rc-icon">🏷️</span> Discount Calculator</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo"><div class="logo-icon">∞</div> Infinite Calculators</div><p>Free, fast, and accurate online calculators for everyday use. No sign-up required.</p></div>
+    <div class="footer-col"><h4>Calculators</h4><ul><li><a href="/bmi-calculator.html">BMI Calculator</a></li><li><a href="/age-calculator.html">Age Calculator</a></li><li><a href="/emi-calculator.html">EMI Calculator</a></li><li><a href="/percentage-calculator.html">Percentage</a></li><li><a href="/profit-margin-calculator.html">Profit Margin</a></li><li><a href="/discount-calculator.html">Discount</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="/">About Us</a></li><li><a href="/">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="/">Privacy Policy</a></li><li><a href="/">Terms of Use</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 Infinite Calculators. All rights reserved.</p><a href="/">infinitecalculators.com</a></div>
+</footer>
+
+<script type="module">
+  import { initNav, initFAQ, initBMI } from '/calculators.js';
+  initNav(); initFAQ(); initBMI();
+  const header = document.getElementById('siteHeader');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMI Calculator – Calculate Loan EMI Online | Infinite Calculators</title>
+  <meta name="description" content="Use our free EMI Calculator to calculate your monthly loan EMI, total interest payable, and total payment. Works for home loans, car loans, and personal loans." />
+  <meta name="keywords" content="emi calculator, loan emi calculator, home loan emi, car loan emi, personal loan calculator, monthly installment calculator" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://infinitecalculators.com/emi-calculator.html" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏦</text></svg>" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <nav class="nav-container">
+    <a href="/" class="nav-logo"><div class="logo-icon">∞</div> Infinite Calculators</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/bmi-calculator.html">BMI</a></li>
+      <li><a href="/age-calculator.html">Age</a></li>
+      <li><a href="/emi-calculator.html" class="active">EMI</a></li>
+      <li><a href="/percentage-calculator.html">Percentage</a></li>
+      <li><a href="/profit-margin-calculator.html">Profit</a></li>
+      <li><a href="/discount-calculator.html">Discount</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="calc-page-hero">
+  <div class="breadcrumb"><a href="/">Home</a> <span>/</span> <span>EMI Calculator</span></div>
+  <h1>EMI Calculator</h1>
+  <p>Calculate your monthly loan EMI, total interest, and total repayment amount instantly. Plan your finances with confidence.</p>
+</section>
+
+<section class="calc-widget-section">
+  <div class="calc-widget">
+    <div class="calc-widget-title">🏦 EMI Calculator</div>
+    <form id="emiForm" novalidate>
+      <div class="form-group">
+        <label for="loanAmount">Loan Amount (₹)</label>
+        <input type="number" id="loanAmount" placeholder="e.g. 500000" min="1000" step="1000" required />
+        <div class="input-hint">Enter the principal loan amount</div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="interestRate">Interest Rate (% p.a.)</label>
+          <input type="number" id="interestRate" placeholder="e.g. 8.5" min="0.1" max="100" step="0.1" required />
+        </div>
+        <div class="form-group">
+          <label for="tenure">Loan Tenure (months)</label>
+          <input type="number" id="tenure" placeholder="e.g. 60" min="1" max="600" step="1" required />
+          <div class="input-hint">In months (e.g. 5 years = 60)</div>
+        </div>
+      </div>
+      <button type="submit" class="calc-btn">Calculate EMI</button>
+      <button type="reset" class="btn btn-secondary" style="width:100%;margin-top:10px;justify-content:center;">Clear</button>
+    </form>
+    <div class="result-box" id="emiResult">
+      <div class="result-label">Monthly EMI</div>
+      <div class="result-value" id="emiMonthly">–</div>
+      <div class="result-grid" style="margin-top:16px;">
+        <div class="result-item">
+          <div class="result-item-value" id="emiTotal">–</div>
+          <div class="result-item-label">Total Payment</div>
+        </div>
+        <div class="result-item">
+          <div class="result-item-value" id="emiInterest">–</div>
+          <div class="result-item-label">Total Interest</div>
+        </div>
+        <div class="result-item">
+          <div class="result-item-value" id="emiPrincipal">–</div>
+          <div class="result-item-label">Principal</div>
+        </div>
+      </div>
+      <div class="emi-breakdown">
+        <div class="emi-bar-wrap">
+          <div class="emi-bar-label">
+            <span style="color:var(--primary)">Principal</span>
+            <span id="emiPrincipalPct">–</span>
+          </div>
+          <div class="emi-bar-track"><div class="emi-bar-fill bar-principal" id="emiPrincipalBar" style="width:0%"></div></div>
+        </div>
+        <div class="emi-bar-wrap">
+          <div class="emi-bar-label">
+            <span style="color:var(--warning)">Interest</span>
+            <span id="emiInterestPct">–</span>
+          </div>
+          <div class="emi-bar-track"><div class="emi-bar-fill bar-interest" id="emiInterestBar" style="width:0%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt">
+  <div class="prose">
+    <h2>What is an EMI?</h2>
+    <p>EMI stands for <strong>Equated Monthly Installment</strong>. It is a fixed amount paid by a borrower to a lender on a specific date each calendar month. EMIs are used to pay off both the principal loan amount and the accrued interest over a fixed repayment period (tenure).</p>
+    <p>EMIs are used for various types of loans including home loans (mortgages), car loans, personal loans, education loans, and consumer durable loans. Understanding your EMI helps in financial planning and choosing the right loan structure.</p>
+
+    <h2>EMI Formula</h2>
+    <p>The standard EMI formula used by all banks and financial institutions is:</p>
+    <div class="formula-box">
+      EMI = P × r × (1 + r)ⁿ ÷ [(1 + r)ⁿ − 1]
+      <br><br>
+      Where:<br>
+      P = Principal loan amount<br>
+      r = Monthly interest rate (Annual rate ÷ 12 ÷ 100)<br>
+      n = Loan tenure in months
+    </div>
+    <p><strong>Example:</strong> For a ₹5,00,000 loan at 8.5% per annum for 5 years (60 months): r = 8.5/12/100 = 0.007083. EMI = 5,00,000 × 0.007083 × (1.007083)⁶⁰ ÷ [(1.007083)⁶⁰ − 1] = <strong>₹10,249 per month</strong></p>
+
+    <h2>Factors Affecting Your EMI</h2>
+    <ul>
+      <li><strong>Loan Amount (Principal):</strong> Higher the loan, higher the EMI. You can reduce the principal with a larger down payment.</li>
+      <li><strong>Interest Rate:</strong> Even a 0.5% difference in rate can significantly change total interest paid. Compare lenders carefully.</li>
+      <li><strong>Loan Tenure:</strong> Longer tenure = lower EMI but higher total interest. Shorter tenure = higher EMI but lower total cost.</li>
+      <li><strong>Prepayments:</strong> Making lump sum prepayments reduces principal, lowering future EMIs or shortening tenure.</li>
+    </ul>
+
+    <h2>Types of Loans and Typical EMI Rates (India)</h2>
+    <ul>
+      <li><strong>Home Loan:</strong> 8% – 12% per annum, tenure up to 30 years.</li>
+      <li><strong>Car Loan:</strong> 7.5% – 15% per annum, tenure 1–7 years.</li>
+      <li><strong>Personal Loan:</strong> 10% – 24% per annum, tenure 1–5 years.</li>
+      <li><strong>Education Loan:</strong> 8% – 15% per annum, tenure 5–15 years.</li>
+    </ul>
+
+    <h2>Tips to Reduce Your EMI Burden</h2>
+    <ul>
+      <li>Make a larger down payment to reduce the principal borrowed.</li>
+      <li>Negotiate with your lender for a lower interest rate — a good credit score helps.</li>
+      <li>Choose a loan tenure that balances affordable EMI with minimum total interest.</li>
+      <li>Make part-prepayments whenever you have surplus funds to reduce principal faster.</li>
+      <li>Consider refinancing at a lower rate if market rates drop significantly.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container-sm">
+    <div class="section-header"><h2>Frequently Asked Questions</h2></div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">What is the difference between EMI and simple interest? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>EMI uses compound interest calculated on a reducing balance method — each month, interest is calculated on the outstanding principal, not the original loan amount. Simple interest is calculated on the original principal throughout. EMI is more transparent and favored by regulated lenders.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Does a longer loan tenure always save money? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>No — a longer tenure lowers your monthly EMI but significantly increases the total interest paid over the loan's lifetime. For a ₹10 lakh loan at 10%, a 10-year tenure pays about ₹5.85 lakh in interest, while a 5-year tenure pays only ₹2.75 lakh. Shorter tenures save more money if you can afford the higher EMI.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I change my EMI during the loan period? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes — most lenders allow EMI changes through part-prepayment, balance transfer, or restructuring. Making prepayments reduces the outstanding principal, which can either reduce your EMI amount or shorten the remaining tenure. Check your loan agreement for prepayment charges.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What happens if I miss an EMI payment? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Missing an EMI can result in late payment penalties, negative impact on your credit score, and in severe cases, loan default proceedings. Most lenders offer a grace period of 2–5 days. If you anticipate difficulty, contact your lender proactively to discuss restructuring options.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is there a way to reduce my existing loan's interest? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes — you can consider a balance transfer to another lender offering a lower interest rate, especially if market rates have dropped since you took the loan. Also, improving your credit score can qualify you for better rates on future loans or refinancing.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="related-section">
+  <div class="container">
+    <h2 style="color: var(--text-primary); margin-bottom: 8px;">Related Calculators</h2>
+    <p>Explore other free tools available on Infinite Calculators.</p>
+    <div class="related-grid">
+      <a href="/bmi-calculator.html" class="related-card"><span class="rc-icon">⚖️</span> BMI Calculator</a>
+      <a href="/age-calculator.html" class="related-card"><span class="rc-icon">🎂</span> Age Calculator</a>
+      <a href="/percentage-calculator.html" class="related-card"><span class="rc-icon">📊</span> Percentage</a>
+      <a href="/profit-margin-calculator.html" class="related-card"><span class="rc-icon">📈</span> Profit Margin</a>
+      <a href="/discount-calculator.html" class="related-card"><span class="rc-icon">🏷️</span> Discount</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo"><div class="logo-icon">∞</div> Infinite Calculators</div><p>Free, fast, and accurate online calculators for everyday use. No sign-up required.</p></div>
+    <div class="footer-col"><h4>Calculators</h4><ul><li><a href="/bmi-calculator.html">BMI Calculator</a></li><li><a href="/age-calculator.html">Age Calculator</a></li><li><a href="/emi-calculator.html">EMI Calculator</a></li><li><a href="/percentage-calculator.html">Percentage</a></li><li><a href="/profit-margin-calculator.html">Profit Margin</a></li><li><a href="/discount-calculator.html">Discount</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="/">About Us</a></li><li><a href="/">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="/">Privacy Policy</a></li><li><a href="/">Terms of Use</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 Infinite Calculators. All rights reserved.</p><a href="/">infinitecalculators.com</a></div>
+</footer>
+
+<script type="module">
+  import { initNav, initFAQ, initEMI } from '/calculators.js';
+  initNav(); initFAQ(); initEMI();
+  const header = document.getElementById('siteHeader');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  }
+</script>
+</body>
+</html>

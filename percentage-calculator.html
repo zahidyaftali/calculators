@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Percentage Calculator – Calculate Percentage Online | Infinite Calculators</title>
+  <meta name="description" content="Free online Percentage Calculator. Calculate percentage of marks, find what percent one number is of another, or compute percentage increase/decrease instantly." />
+  <meta name="keywords" content="percentage calculator, calculate percentage, marks percentage calculator, percentage of marks, percent calculator online" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://infinitecalculators.com/percentage-calculator.html" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <nav class="nav-container">
+    <a href="/" class="nav-logo"><div class="logo-icon">∞</div> Infinite Calculators</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/bmi-calculator.html">BMI</a></li>
+      <li><a href="/age-calculator.html">Age</a></li>
+      <li><a href="/emi-calculator.html">EMI</a></li>
+      <li><a href="/percentage-calculator.html" class="active">Percentage</a></li>
+      <li><a href="/profit-margin-calculator.html">Profit</a></li>
+      <li><a href="/discount-calculator.html">Discount</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="calc-page-hero">
+  <div class="breadcrumb"><a href="/">Home</a> <span>/</span> <span>Percentage Calculator</span></div>
+  <h1>Percentage Calculator</h1>
+  <p>Calculate the percentage of marks obtained instantly. Enter marks and total to get your percentage score and grade.</p>
+</section>
+
+<section class="calc-widget-section">
+  <div class="calc-widget">
+    <div class="calc-widget-title">📊 Percentage Calculator</div>
+    <form id="percentForm" novalidate>
+      <div class="form-group">
+        <label for="obtained">Marks Obtained</label>
+        <input type="number" id="obtained" placeholder="e.g. 450" min="0" step="0.01" required />
+        <div class="input-hint">Enter your obtained marks</div>
+      </div>
+      <div class="form-group">
+        <label for="total">Total Marks</label>
+        <input type="number" id="total" placeholder="e.g. 500" min="1" step="0.01" required />
+        <div class="input-hint">Enter the maximum total marks</div>
+      </div>
+      <button type="submit" class="calc-btn">Calculate Percentage</button>
+      <button type="reset" class="btn btn-secondary" style="width:100%;margin-top:10px;justify-content:center;">Clear</button>
+    </form>
+    <div class="result-box" id="percentResult">
+      <div class="result-label">Your Percentage</div>
+      <div class="result-value" id="percentValue">–</div>
+      <span class="result-category" id="percentGrade"></span>
+      <div class="result-grid" style="margin-top:16px;">
+        <div class="result-item">
+          <div class="result-item-value" id="percentObtained">–</div>
+          <div class="result-item-label">Marks Obtained</div>
+        </div>
+        <div class="result-item">
+          <div class="result-item-value" id="percentTotal">–</div>
+          <div class="result-item-label">Total Marks</div>
+        </div>
+        <div class="result-item">
+          <div class="result-item-value" id="percentRemaining">–</div>
+          <div class="result-item-label">Marks Lost</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt">
+  <div class="prose">
+    <h2>What is Percentage?</h2>
+    <p>A percentage is a way of expressing a number as a fraction of 100. The word "percent" comes from the Latin <em>per centum</em>, meaning "by the hundred." Percentages are widely used in everyday life — from exam scores and tax rates to discounts and financial returns.</p>
+    <p>In academic contexts, percentage is the most universally understood metric for comparing performance. Whether you scored 450 out of 500 or 270 out of 300, converting to percentage allows fair comparison across different total marks systems.</p>
+
+    <h2>Percentage Formula</h2>
+    <div class="formula-box">
+      Percentage = (Obtained Marks ÷ Total Marks) × 100
+      <br><br>
+      Example: (450 ÷ 500) × 100 = 90%
+    </div>
+
+    <h2>Grade Classification System</h2>
+    <p>Most educational systems use standard grade bands based on percentage:</p>
+    <ul>
+      <li><strong>90% and above</strong> — A+ Grade (Excellent / Distinction)</li>
+      <li><strong>80% – 89%</strong> — A Grade (Very Good / First Class)</li>
+      <li><strong>70% – 79%</strong> — B Grade (Good / Second Class)</li>
+      <li><strong>60% – 69%</strong> — C Grade (Average / Third Class)</li>
+      <li><strong>50% – 59%</strong> — D Grade (Below Average / Pass)</li>
+      <li><strong>Below 50%</strong> — F Grade (Fail)</li>
+    </ul>
+    <p>Note: Grade boundaries vary by institution, university, or examination board. The above is a common standard.</p>
+
+    <h2>Other Percentage Calculations</h2>
+    <p>Percentages are used in many contexts beyond marks:</p>
+    <ul>
+      <li><strong>Percentage increase:</strong> [(New Value – Old Value) / Old Value] × 100</li>
+      <li><strong>Percentage decrease:</strong> [(Old Value – New Value) / Old Value] × 100</li>
+      <li><strong>What % is X of Y:</strong> (X / Y) × 100</li>
+      <li><strong>X% of Y:</strong> (X / 100) × Y</li>
+    </ul>
+
+    <h2>Why Percentages Matter in Academics</h2>
+    <p>Academic percentages are used for:</p>
+    <ul>
+      <li>University admissions cutoffs and merit lists</li>
+      <li>Scholarship eligibility (often requiring 75% or above)</li>
+      <li>Job applications where minimum percentage criteria are specified</li>
+      <li>Professional exam eligibility (CA, law, medical boards)</li>
+      <li>CGPA conversion and equivalency assessments</li>
+    </ul>
+
+    <h2>CGPA to Percentage Conversion</h2>
+    <p>Many universities now use CGPA (Cumulative Grade Point Average) instead of direct percentage. Common conversion formulas:</p>
+    <div class="formula-box">
+      CBSE formula: Percentage = CGPA × 9.5<br>
+      Anna University: Percentage = (CGPA – 0.5) × 10<br>
+      Mumbai University: Percentage = (CGPA × 7.1) + 11
+    </div>
+    <p>Always refer to your specific institution's official conversion formula.</p>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container-sm">
+    <div class="section-header"><h2>Frequently Asked Questions</h2></div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">How do I calculate percentage of marks? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Divide your obtained marks by the total marks, then multiply by 100. For example: if you scored 380 out of 500, your percentage = (380 ÷ 500) × 100 = 76%. Our calculator does this automatically — just enter both values and click Calculate.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is the difference between percentage and percentile? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Percentage is your score out of the total — it's absolute. Percentile tells you your rank relative to other students — it's relative. If you're in the 90th percentile, you scored better than 90% of all test takers. These are two different measurements and serve different purposes.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I use this for aggregate percentage across subjects? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes! Simply add all marks obtained across all subjects in the "Marks Obtained" field, and add all subject totals in the "Total Marks" field. The result will be your aggregate percentage across all subjects combined.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What percentage is needed to pass most exams? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>In India, most board exams (CBSE, ICSE, state boards) require a minimum of 33% or 35% to pass in each subject. For competitive exams like UPSC, JEE, NEET, and GATE, the cutoff percentage varies each year based on difficulty and the number of applicants.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do I convert percentage to GPA? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>A common conversion (used by many US universities for Indian applicants): 90–100% = 4.0 GPA, 80–89% = 3.5–3.9, 70–79% = 3.0–3.4, 60–69% = 2.5–2.9. However, conversion scales vary by institution, so always check the specific guidelines of the university you're applying to.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="related-section">
+  <div class="container">
+    <h2 style="color: var(--text-primary); margin-bottom: 8px;">Related Calculators</h2>
+    <p>Explore other free tools available on Infinite Calculators.</p>
+    <div class="related-grid">
+      <a href="/bmi-calculator.html" class="related-card"><span class="rc-icon">⚖️</span> BMI Calculator</a>
+      <a href="/age-calculator.html" class="related-card"><span class="rc-icon">🎂</span> Age Calculator</a>
+      <a href="/emi-calculator.html" class="related-card"><span class="rc-icon">🏦</span> EMI Calculator</a>
+      <a href="/profit-margin-calculator.html" class="related-card"><span class="rc-icon">📈</span> Profit Margin</a>
+      <a href="/discount-calculator.html" class="related-card"><span class="rc-icon">🏷️</span> Discount</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo"><div class="logo-icon">∞</div> Infinite Calculators</div><p>Free, fast, and accurate online calculators for everyday use. No sign-up required.</p></div>
+    <div class="footer-col"><h4>Calculators</h4><ul><li><a href="/bmi-calculator.html">BMI Calculator</a></li><li><a href="/age-calculator.html">Age Calculator</a></li><li><a href="/emi-calculator.html">EMI Calculator</a></li><li><a href="/percentage-calculator.html">Percentage</a></li><li><a href="/profit-margin-calculator.html">Profit Margin</a></li><li><a href="/discount-calculator.html">Discount</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="/">About Us</a></li><li><a href="/">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="/">Privacy Policy</a></li><li><a href="/">Terms of Use</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 Infinite Calculators. All rights reserved.</p><a href="/">infinitecalculators.com</a></div>
+</footer>
+
+<script type="module">
+  import { initNav, initFAQ, initPercentage } from '/calculators.js';
+  initNav(); initFAQ(); initPercentage();
+  const header = document.getElementById('siteHeader');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  }
+</script>
+</body>
+</html>

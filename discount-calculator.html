@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discount Calculator – Calculate Sale Price & Savings | Infinite Calculators</title>
+  <meta name="description" content="Free Discount Calculator. Enter the original price and discount percentage to instantly find the final price after discount and how much you save." />
+  <meta name="keywords" content="discount calculator, sale price calculator, how much do i save, percentage discount, final price calculator, coupon calculator" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://infinitecalculators.com/discount-calculator.html" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏷️</text></svg>" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <nav class="nav-container">
+    <a href="/" class="nav-logo"><div class="logo-icon">∞</div> Infinite Calculators</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/bmi-calculator.html">BMI</a></li>
+      <li><a href="/age-calculator.html">Age</a></li>
+      <li><a href="/emi-calculator.html">EMI</a></li>
+      <li><a href="/percentage-calculator.html">Percentage</a></li>
+      <li><a href="/profit-margin-calculator.html">Profit</a></li>
+      <li><a href="/discount-calculator.html" class="active">Discount</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="calc-page-hero">
+  <div class="breadcrumb"><a href="/">Home</a> <span>/</span> <span>Discount Calculator</span></div>
+  <h1>Discount Calculator</h1>
+  <p>Find the final price after any discount instantly. See exactly how much you save before making a purchase decision.</p>
+</section>
+
+<section class="calc-widget-section">
+  <div class="calc-widget">
+    <div class="calc-widget-title">🏷️ Discount Calculator</div>
+    <form id="discountForm" novalidate>
+      <div class="form-group">
+        <label for="originalPrice">Original Price (₹)</label>
+        <input type="number" id="originalPrice" placeholder="e.g. 2999" min="0.01" step="0.01" required />
+        <div class="input-hint">Enter the original or MRP price</div>
+      </div>
+      <div class="form-group">
+        <label for="discountPercent">Discount Percentage (%)</label>
+        <input type="number" id="discountPercent" placeholder="e.g. 30" min="0" max="100" step="0.1" required />
+        <div class="input-hint">Enter the discount percentage (0–100)</div>
+      </div>
+      <button type="submit" class="calc-btn">Calculate Discount</button>
+      <button type="reset" class="btn btn-secondary" style="width:100%;margin-top:10px;justify-content:center;">Clear</button>
+    </form>
+    <div class="result-box" id="discountResult">
+      <div class="result-label">Final Price After Discount</div>
+      <div class="result-value" id="discountFinal">–</div>
+      <div class="result-grid" style="margin-top:16px;">
+        <div class="result-item">
+          <div class="result-item-value" id="discountOriginal">–</div>
+          <div class="result-item-label">Original Price</div>
+        </div>
+        <div class="result-item">
+          <div class="result-item-value" id="discountPct">–</div>
+          <div class="result-item-label">Discount</div>
+        </div>
+      </div>
+      <div class="savings-highlight">
+        <div class="savings-text">Total Savings</div>
+        <div class="savings-amount" id="discountSavings">–</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt">
+  <div class="prose">
+    <h2>What is a Discount?</h2>
+    <p>A discount is a reduction in the original price of a product or service. Businesses offer discounts for various reasons — to attract customers, clear old inventory, celebrate festive seasons, or reward loyal shoppers. From everyday grocery shopping to big-ticket electronics, discounts are ubiquitous in modern retail.</p>
+    <p>Understanding how discounts work helps you make smarter purchasing decisions, compare deals across stores, and spot when a "discount" isn't as good as it appears. Our Discount Calculator gives you an instant, accurate breakdown of the final price and total savings.</p>
+
+    <h2>Discount Formula</h2>
+    <div class="formula-box">
+      Discount Amount = (Original Price × Discount %) ÷ 100<br>
+      Final Price = Original Price − Discount Amount<br><br>
+      Example: Original = ₹2,999, Discount = 30%<br>
+      Savings = (2999 × 30) ÷ 100 = ₹899.70<br>
+      Final Price = 2999 − 899.70 = <strong>₹2,099.30</strong>
+    </div>
+
+    <h2>Types of Discounts</h2>
+    <ul>
+      <li><strong>Percentage Discount:</strong> A fixed percentage off the original price (most common). E.g., 20% off.</li>
+      <li><strong>Flat Discount:</strong> A fixed amount off. E.g., ₹500 off on orders above ₹3,000.</li>
+      <li><strong>Buy One Get One (BOGO):</strong> Effectively a 50% discount on two items.</li>
+      <li><strong>Seasonal Sales:</strong> End-of-season clearances with deep discounts (up to 70–80% off).</li>
+      <li><strong>Coupon / Promo Code:</strong> Additional percentage or flat amount off at checkout.</li>
+      <li><strong>Loyalty Discounts:</strong> Rewards for repeat customers, often through points programs.</li>
+      <li><strong>Bulk Discounts:</strong> Lower per-unit price when buying in large quantities.</li>
+    </ul>
+
+    <h2>How to Spot a Real Deal</h2>
+    <p>Not all discounts are equal. Here's how to identify genuine value:</p>
+    <ul>
+      <li><strong>Check the base price:</strong> Some retailers inflate MRP before applying a "discount." Research the real market price first.</li>
+      <li><strong>Compare across platforms:</strong> Use price comparison tools to see the same product on multiple sites.</li>
+      <li><strong>Look at the final price:</strong> What matters is the final amount you pay, not the discount percentage.</li>
+      <li><strong>Consider total cost:</strong> Include shipping, taxes, and handling fees when comparing.</li>
+      <li><strong>Track price history:</strong> Tools like camelcamelcamel (Amazon) show historical pricing to spot fake discounts.</li>
+    </ul>
+
+    <h2>Stacking Multiple Discounts</h2>
+    <p>When multiple discounts apply (e.g., 20% sale + 10% coupon), they are typically applied sequentially, not added together:</p>
+    <div class="formula-box">
+      After 20% off ₹1,000 → ₹800<br>
+      After 10% off ₹800 → ₹720<br>
+      Total effective discount = 28% (not 30%)
+    </div>
+    <p>Sequential discounts always result in a lower effective discount than simply adding the percentages. Understanding this prevents overpaying when stacking deals.</p>
+
+    <h2>GST and Discounts</h2>
+    <p>In India, GST (Goods and Services Tax) is applied on the discounted price (final selling price), not the MRP, as per GST regulations. This means pre-discount amounts are not taxed. However, post-sale trade discounts linked to invoices may allow ITC (Input Tax Credit) adjustments. Always review the tax treatment applicable to your specific transaction.</p>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container-sm">
+    <div class="section-header"><h2>Frequently Asked Questions</h2></div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">How do I calculate the price after a discount? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Multiply the original price by the discount percentage, divide by 100 to get the savings amount, then subtract from the original price. Formula: Final Price = Original Price × (1 − Discount%/100). Our calculator does this instantly — just enter the two values.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What discount percentage gives the best value? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>There's no universal "best" discount — it depends entirely on the product category, market pricing, and your needs. A 10% discount on a ₹50,000 TV saves ₹5,000, while a 50% discount on a ₹100 item saves only ₹50. Always evaluate the absolute savings amount alongside the percentage.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do I calculate what percentage discount I got? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Use the formula: Discount % = [(Original Price − Sale Price) ÷ Original Price] × 100. For example, if MRP is ₹500 and you paid ₹350: Discount % = [(500 − 350) ÷ 500] × 100 = 30%.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is a higher discount percentage always better? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Not necessarily. A 70% discount on an inflated MRP might result in the same or higher price than a competitor selling at a lower base price with no discount. Always compare the final absolute price across different sellers before making a decision.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do I calculate savings with two stacked discounts? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Apply discounts sequentially. First apply discount 1 to get an intermediate price, then apply discount 2 to that intermediate price. Effective combined discount = 1 − (1 − D1/100) × (1 − D2/100). For example, 20% + 10% = 1 − 0.8 × 0.9 = 28% total effective discount, not 30%.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="related-section">
+  <div class="container">
+    <h2 style="color: var(--text-primary); margin-bottom: 8px;">Related Calculators</h2>
+    <p>Explore other free tools available on Infinite Calculators.</p>
+    <div class="related-grid">
+      <a href="/profit-margin-calculator.html" class="related-card"><span class="rc-icon">📈</span> Profit Margin</a>
+      <a href="/percentage-calculator.html" class="related-card"><span class="rc-icon">📊</span> Percentage</a>
+      <a href="/emi-calculator.html" class="related-card"><span class="rc-icon">🏦</span> EMI Calculator</a>
+      <a href="/bmi-calculator.html" class="related-card"><span class="rc-icon">⚖️</span> BMI Calculator</a>
+      <a href="/age-calculator.html" class="related-card"><span class="rc-icon">🎂</span> Age Calculator</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo"><div class="logo-icon">∞</div> Infinite Calculators</div><p>Free, fast, and accurate online calculators for everyday use. No sign-up required.</p></div>
+    <div class="footer-col"><h4>Calculators</h4><ul><li><a href="/bmi-calculator.html">BMI Calculator</a></li><li><a href="/age-calculator.html">Age Calculator</a></li><li><a href="/emi-calculator.html">EMI Calculator</a></li><li><a href="/percentage-calculator.html">Percentage</a></li><li><a href="/profit-margin-calculator.html">Profit Margin</a></li><li><a href="/discount-calculator.html">Discount</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="/">About Us</a></li><li><a href="/">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="/">Privacy Policy</a></li><li><a href="/">Terms of Use</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 Infinite Calculators. All rights reserved.</p><a href="/">infinitecalculators.com</a></div>
+</footer>
+
+<script type="module">
+  import { initNav, initFAQ, initDiscount } from '/calculators.js';
+  initNav(); initFAQ(); initDiscount();
+  const header = document.getElementById('siteHeader');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  }
+</script>
+</body>
+</html>

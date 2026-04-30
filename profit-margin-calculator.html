@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profit Margin Calculator – Calculate Profit & Markup | Infinite Calculators</title>
+  <meta name="description" content="Free Profit Margin Calculator. Enter cost price and selling price to instantly calculate your profit margin percentage, markup percentage, and net profit amount." />
+  <meta name="keywords" content="profit margin calculator, profit calculator, markup calculator, gross profit margin, profit percentage calculator, selling price calculator" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://infinitecalculators.com/profit-margin-calculator.html" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <nav class="nav-container">
+    <a href="/" class="nav-logo"><div class="logo-icon">∞</div> Infinite Calculators</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/bmi-calculator.html">BMI</a></li>
+      <li><a href="/age-calculator.html">Age</a></li>
+      <li><a href="/emi-calculator.html">EMI</a></li>
+      <li><a href="/percentage-calculator.html">Percentage</a></li>
+      <li><a href="/profit-margin-calculator.html" class="active">Profit</a></li>
+      <li><a href="/discount-calculator.html">Discount</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="calc-page-hero">
+  <div class="breadcrumb"><a href="/">Home</a> <span>/</span> <span>Profit Margin Calculator</span></div>
+  <h1>Profit Margin Calculator</h1>
+  <p>Instantly calculate your profit margin, markup percentage, and net profit. Essential tool for business owners, sellers, and entrepreneurs.</p>
+</section>
+
+<section class="calc-widget-section">
+  <div class="calc-widget">
+    <div class="calc-widget-title">📈 Profit Margin Calculator</div>
+    <form id="profitForm" novalidate>
+      <div class="form-group">
+        <label for="costPrice">Cost Price (₹)</label>
+        <input type="number" id="costPrice" placeholder="e.g. 500" min="0.01" step="0.01" required />
+        <div class="input-hint">Amount you paid to acquire or produce the item</div>
+      </div>
+      <div class="form-group">
+        <label for="sellingPrice">Selling Price (₹)</label>
+        <input type="number" id="sellingPrice" placeholder="e.g. 750" min="0.01" step="0.01" required />
+        <div class="input-hint">Price at which you sell the item</div>
+      </div>
+      <button type="submit" class="calc-btn">Calculate Profit</button>
+      <button type="reset" class="btn btn-secondary" style="width:100%;margin-top:10px;justify-content:center;">Clear</button>
+    </form>
+    <div class="result-box" id="profitResult">
+      <div class="result-label">Profit Margin</div>
+      <div class="result-value" id="profitMarginValue">–</div>
+      <span class="result-category" id="profitStatus"></span>
+      <div class="result-grid" style="margin-top:16px;">
+        <div class="result-item">
+          <div class="result-item-value" id="profitAmount">–</div>
+          <div class="result-item-label">Net Profit</div>
+        </div>
+        <div class="result-item">
+          <div class="result-item-value" id="profitMarkup">–</div>
+          <div class="result-item-label">Markup %</div>
+        </div>
+        <div class="result-item">
+          <div class="result-item-value" id="profitRevenue">–</div>
+          <div class="result-item-label">Revenue</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt">
+  <div class="prose">
+    <h2>What is Profit Margin?</h2>
+    <p>Profit margin is a financial metric that measures the percentage of revenue that a business retains as profit after accounting for costs. It is one of the most important indicators of a business's financial health and operational efficiency.</p>
+    <p>A higher profit margin means a company keeps more money for every rupee of sales, while a low margin suggests high costs or intense price competition. Businesses use profit margins to compare performance over time, benchmark against industry averages, and make pricing decisions.</p>
+
+    <h2>Profit Margin Formula</h2>
+    <div class="formula-box">
+      Profit Margin (%) = [(Selling Price − Cost Price) ÷ Selling Price] × 100
+      <br><br>
+      Example: Cost = ₹500, Selling = ₹750<br>
+      Profit = ₹250<br>
+      Profit Margin = (250 ÷ 750) × 100 = <strong>33.33%</strong>
+    </div>
+
+    <h2>Profit Margin vs. Markup – Key Difference</h2>
+    <p>These terms are often confused but represent very different things:</p>
+    <div class="formula-box">
+      Profit Margin = (Profit ÷ Selling Price) × 100   ← based on selling price<br>
+      Markup       = (Profit ÷ Cost Price) × 100        ← based on cost price
+    </div>
+    <ul>
+      <li>If Cost = ₹100 and Selling = ₹150: Profit = ₹50</li>
+      <li>Profit Margin = 50/150 × 100 = <strong>33.33%</strong></li>
+      <li>Markup = 50/100 × 100 = <strong>50%</strong></li>
+    </ul>
+    <p>Markup is always higher than the corresponding profit margin for the same transaction. Retailers typically think in markup terms when pricing, but margins are used when reporting financial performance.</p>
+
+    <h2>Types of Profit Margin</h2>
+    <ul>
+      <li><strong>Gross Profit Margin:</strong> Revenue minus cost of goods sold (COGS). Measures production efficiency.</li>
+      <li><strong>Operating Profit Margin:</strong> Subtracts operating expenses. Measures operational efficiency.</li>
+      <li><strong>Net Profit Margin:</strong> After all deductions including taxes and interest. The true bottom line.</li>
+    </ul>
+
+    <h2>Industry Profit Margin Benchmarks</h2>
+    <ul>
+      <li><strong>Retail (FMCG):</strong> 2% – 8% net margin is typical</li>
+      <li><strong>Software / SaaS:</strong> 20% – 40% net margin is common</li>
+      <li><strong>Restaurant / Food:</strong> 3% – 9% is industry average</li>
+      <li><strong>E-commerce:</strong> 2% – 5% due to high logistics costs</li>
+      <li><strong>Luxury goods:</strong> 50% – 70% gross margins are standard</li>
+    </ul>
+
+    <h2>How to Improve Your Profit Margin</h2>
+    <ul>
+      <li>Reduce COGS through better supplier negotiations or bulk purchasing</li>
+      <li>Increase selling price gradually while maintaining customer satisfaction</li>
+      <li>Cut operational overhead — rent, utilities, unnecessary subscriptions</li>
+      <li>Focus on high-margin products and reduce low-margin SKUs</li>
+      <li>Improve conversion rates to spread fixed costs over more units</li>
+    </ul>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container-sm">
+    <div class="section-header"><h2>Frequently Asked Questions</h2></div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">What is a good profit margin? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>A "good" profit margin depends heavily on your industry. For retail, 5–10% is often considered healthy. For software companies, 20–30%+ is common. High-margin industries like pharmaceuticals or luxury goods often see 40–70%. Compare your margin to industry averages rather than an absolute number.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is the difference between gross and net profit margin? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Gross profit margin only subtracts the direct cost of goods sold (COGS) from revenue. Net profit margin subtracts all expenses including COGS, operating costs, salaries, rent, taxes, and interest. Net margin is a more complete picture of profitability. Our calculator computes the gross profit margin from cost and selling price.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do I use profit margin to set pricing? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>If you know your target profit margin, you can work backwards to find the selling price: Selling Price = Cost Price ÷ (1 − Target Margin). For example, if cost is ₹200 and you want a 30% margin: Selling Price = 200 ÷ 0.70 = ₹285.71.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can profit margin be negative? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes. A negative profit margin means you're selling below cost — a loss situation. This can occur during startup phases, heavy discounting, product clearance, or competitive pricing battles. Sustained negative margins are unsustainable and indicate a need to revise pricing or reduce costs.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is markup the same as margin? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>No — they're different calculations often confused with each other. Markup is profit as a percentage of cost. Margin is profit as a percentage of selling price. For the same transaction, markup will always be a higher percentage than margin. See the formulas above for a clear comparison.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="related-section">
+  <div class="container">
+    <h2 style="color: var(--text-primary); margin-bottom: 8px;">Related Calculators</h2>
+    <p>Explore other free tools available on Infinite Calculators.</p>
+    <div class="related-grid">
+      <a href="/discount-calculator.html" class="related-card"><span class="rc-icon">🏷️</span> Discount Calculator</a>
+      <a href="/percentage-calculator.html" class="related-card"><span class="rc-icon">📊</span> Percentage</a>
+      <a href="/emi-calculator.html" class="related-card"><span class="rc-icon">🏦</span> EMI Calculator</a>
+      <a href="/bmi-calculator.html" class="related-card"><span class="rc-icon">⚖️</span> BMI Calculator</a>
+      <a href="/age-calculator.html" class="related-card"><span class="rc-icon">🎂</span> Age Calculator</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo"><div class="logo-icon">∞</div> Infinite Calculators</div><p>Free, fast, and accurate online calculators for everyday use. No sign-up required.</p></div>
+    <div class="footer-col"><h4>Calculators</h4><ul><li><a href="/bmi-calculator.html">BMI Calculator</a></li><li><a href="/age-calculator.html">Age Calculator</a></li><li><a href="/emi-calculator.html">EMI Calculator</a></li><li><a href="/percentage-calculator.html">Percentage</a></li><li><a href="/profit-margin-calculator.html">Profit Margin</a></li><li><a href="/discount-calculator.html">Discount</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="/">About Us</a></li><li><a href="/">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="/">Privacy Policy</a></li><li><a href="/">Terms of Use</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 Infinite Calculators. All rights reserved.</p><a href="/">infinitecalculators.com</a></div>
+</footer>
+
+<script type="module">
+  import { initNav, initFAQ, initProfitMargin } from '/calculators.js';
+  initNav(); initFAQ(); initProfitMargin();
+  const header = document.getElementById('siteHeader');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  }
+</script>
+</body>
+</html>

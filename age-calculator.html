@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age Calculator – Calculate Your Exact Age | Infinite Calculators</title>
+  <meta name="description" content="Calculate your exact age in years, months, days, and weeks with our free Age Calculator. Find out how many days you've lived and when your next birthday is." />
+  <meta name="keywords" content="age calculator, calculate age, how old am i, age calculator from date of birth, exact age calculator, birthday calculator" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://infinitecalculators.com/age-calculator.html" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <nav class="nav-container">
+    <a href="/" class="nav-logo"><div class="logo-icon">∞</div> Infinite Calculators</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/bmi-calculator.html">BMI</a></li>
+      <li><a href="/age-calculator.html" class="active">Age</a></li>
+      <li><a href="/emi-calculator.html">EMI</a></li>
+      <li><a href="/percentage-calculator.html">Percentage</a></li>
+      <li><a href="/profit-margin-calculator.html">Profit</a></li>
+      <li><a href="/discount-calculator.html">Discount</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="calc-page-hero">
+  <div class="breadcrumb"><a href="/">Home</a> <span>/</span> <span>Age Calculator</span></div>
+  <h1>Age Calculator</h1>
+  <p>Find your exact age in years, months, days, and weeks. Discover fun stats like total days lived and days until your next birthday.</p>
+</section>
+
+<section class="calc-widget-section">
+  <div class="calc-widget">
+    <div class="calc-widget-title">🎂 Age Calculator</div>
+    <form id="ageForm" novalidate>
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required />
+        <div class="input-hint">Select your date of birth</div>
+      </div>
+      <button type="submit" class="calc-btn">Calculate Age</button>
+      <button type="reset" class="btn btn-secondary" style="width:100%;margin-top:10px;justify-content:center;">Clear</button>
+    </form>
+    <div class="result-box" id="ageResult">
+      <div class="result-label">Your Exact Age</div>
+      <div class="result-value">
+        <span id="ageYears">–</span> yrs,
+        <span id="ageMonths">–</span> mo,
+        <span id="ageDays">–</span> days
+      </div>
+      <div style="margin-top: 20px;">
+        <div class="result-grid">
+          <div class="result-item">
+            <div class="result-item-value" id="ageTotalDays">–</div>
+            <div class="result-item-label">Total Days</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-value" id="ageTotalWeeks">–</div>
+            <div class="result-item-label">Total Weeks</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-value" id="ageTotalMonths">–</div>
+            <div class="result-item-label">Total Months</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-value" id="ageNextBday">–</div>
+            <div class="result-item-label">Next Birthday</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt">
+  <div class="prose">
+    <h2>What is an Age Calculator?</h2>
+    <p>An Age Calculator is a simple tool that computes your exact age from your date of birth to today's date. Unlike a simple subtraction of years, a precise age calculator accounts for leap years, varying month lengths, and whether your birthday has occurred yet in the current year.</p>
+    <p>Our Age Calculator goes beyond just years — it tells you your age in years, months, and days with complete accuracy. It also provides additional statistics such as your total age in days, weeks, and total months, as well as the number of days remaining until your next birthday.</p>
+
+    <h2>How the Age Calculator Works</h2>
+    <p>The calculation follows a precise three-step process:</p>
+    <div class="formula-box">
+      Step 1: Years = Current Year − Birth Year<br>
+      Step 2: Adjust for months (if current month &lt; birth month, subtract 1 year)<br>
+      Step 3: Adjust for days (if current day &lt; birth day, subtract 1 month, add days in previous month)
+    </div>
+    <p>For example, if you were born on March 15, 1990, and today is April 25, 2025: You are 35 years, 1 month, and 10 days old. Total days = 12,824.</p>
+
+    <h2>Why Calculate Your Exact Age?</h2>
+    <ul>
+      <li><strong>Legal purposes:</strong> Age verification for contracts, retirement benefits, and eligibility checks.</li>
+      <li><strong>Medical use:</strong> Doctors calculate precise ages for pediatric dosing, developmental milestones, and screening recommendations.</li>
+      <li><strong>Fun statistics:</strong> Discover how many days or weeks you've been alive.</li>
+      <li><strong>Countdown to birthday:</strong> Know exactly how many days until your next celebration.</li>
+      <li><strong>HR and admin:</strong> Companies use age calculations for employee benefits, retirement planning, and compliance.</li>
+    </ul>
+
+    <h2>Leap Year Handling</h2>
+    <p>Leap years occur every 4 years (with some exceptions for century years). A leap year has 366 days instead of 365. Our calculator automatically accounts for leap years when computing total days, ensuring maximum accuracy. If you were born on February 29 (a leap day), the calculator correctly handles the next birthday as either February 28 or March 1 depending on the year.</p>
+
+    <h2>Fun Age Facts</h2>
+    <ul>
+      <li>An average person's heart beats about 100,000 times per day — multiply that by your total days!</li>
+      <li>By age 70, the average person will have slept for approximately 24 years.</li>
+      <li>The oldest verified human ever lived was Jeanne Calment of France, who died at 122 years and 164 days old.</li>
+      <li>In some cultures, the traditional way of counting age counts the year of birth as "year one," making everyone born a year older.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container-sm">
+    <div class="section-header"><h2>Frequently Asked Questions</h2></div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">How accurate is this age calculator? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Our age calculator is highly accurate. It correctly handles leap years, varying month lengths (28, 29, 30, or 31 days), and precisely calculates years, months, and remaining days. The calculation is based on the current date at the time you run it in your browser.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I calculate age for a past or future date? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>This calculator computes age from your date of birth up to today's date. For calculating the age between two specific dates (not necessarily today), you would enter the earlier date as the "date of birth." The result will tell you the exact duration between the two dates.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What if I was born on February 29 (leap day)? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>If you were born on February 29, our calculator handles this edge case gracefully. In non-leap years, your birthday is effectively counted as March 1 for next birthday calculations. The total days and age calculation remain accurate regardless of birth date.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How is the "next birthday" countdown calculated? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>The calculator finds the date of your next birthday in the current year. If that date has already passed, it moves to next year. Then it counts the exact number of days between today and that upcoming birthday date.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Does this work in different time zones? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes — the calculator uses your device's local date, which reflects your current time zone. If it's past midnight in your location, today's date is used. For maximum accuracy, ensure your device's date and time settings are correct.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="related-section">
+  <div class="container">
+    <h2 style="color: var(--text-primary); margin-bottom: 8px;">Related Calculators</h2>
+    <p>Explore other free tools available on Infinite Calculators.</p>
+    <div class="related-grid">
+      <a href="/bmi-calculator.html" class="related-card"><span class="rc-icon">⚖️</span> BMI Calculator</a>
+      <a href="/emi-calculator.html" class="related-card"><span class="rc-icon">🏦</span> EMI Calculator</a>
+      <a href="/percentage-calculator.html" class="related-card"><span class="rc-icon">📊</span> Percentage</a>
+      <a href="/profit-margin-calculator.html" class="related-card"><span class="rc-icon">📈</span> Profit Margin</a>
+      <a href="/discount-calculator.html" class="related-card"><span class="rc-icon">🏷️</span> Discount</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo"><div class="logo-icon">∞</div> Infinite Calculators</div><p>Free, fast, and accurate online calculators for everyday use. No sign-up required.</p></div>
+    <div class="footer-col"><h4>Calculators</h4><ul><li><a href="/bmi-calculator.html">BMI Calculator</a></li><li><a href="/age-calculator.html">Age Calculator</a></li><li><a href="/emi-calculator.html">EMI Calculator</a></li><li><a href="/percentage-calculator.html">Percentage</a></li><li><a href="/profit-margin-calculator.html">Profit Margin</a></li><li><a href="/discount-calculator.html">Discount</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="/">About Us</a></li><li><a href="/">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="/">Privacy Policy</a></li><li><a href="/">Terms of Use</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 Infinite Calculators. All rights reserved.</p><a href="/">infinitecalculators.com</a></div>
+</footer>
+
+<script type="module">
+  import { initNav, initFAQ, initAge } from '/calculators.js';
+  initNav(); initFAQ(); initAge();
+  const header = document.getElementById('siteHeader');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  }
+</script>
+</body>
+</html>
