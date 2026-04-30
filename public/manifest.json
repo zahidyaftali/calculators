@@ -1,0 +1,16 @@
+{
+  "name": "Infinite Calculators",
+  "short_name": "Calculators",
+  "description": "Free online calculators – BMI, Age, EMI, Percentage, Profit Margin, and Discount. Fast, accurate, and easy to use.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
